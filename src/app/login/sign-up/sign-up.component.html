@@ -1,0 +1,83 @@
+<div class="wrap-login100">
+    <span class="login100-form-title">
+        Sign Up
+    </span>
+    <form class="login100-form  p-l-55 p-r-55 p-t-20" #up="ngForm" novalidate >
+       
+        <div class="wrap-input100  m-b-16" data-validate="Please enter username">
+            <input class="form-control input100" type="text" name="username" placeholder="Username" 
+
+            [(ngModel)]="model.username" 
+            #username ="ngModel" 
+            [ngClass]="{'is-invalid':up.submitted && username.invalid}" required />
+            <span class="focus-input100"></span>  
+
+             <div class="invalid-feedback">
+                <div> Username is required</div>
+            </div>      
+
+        </div>
+        <div class="wrap-input100  m-b-16" data-validate="Email">
+            <input class="form-control input100" type="Email" name="email" placeholder="email"
+
+            [(ngModel)]="model.email" 
+            #email ="ngModel" 
+            [ngClass]="{'is-invalid':up.submitted && email.invalid}" required email />
+
+            <span class="focus-input100"></span>
+
+            <div class="invalid-feedback" *ngIf="up.submitted && email.invalid">
+                <div *ngIf = "email.errors.required"> Email name is required</div>
+                <div *ngIf = "email.errors.email"> Email must be a valid email Address</div>
+            </div>
+        </div>
+        <div class="wrap-input100  m-b-16" data-validate="Please enter password">
+            <input class="form-control input100" type="password" name="password" placeholder="Password" 
+
+            [(ngModel)]="model.password" 
+            #password ="ngModel" 
+            [ngClass]="{'is-invalid':up.submitted && password.invalid}"
+
+            required minlength="6" />
+
+            <span class="focus-input100"></span>
+
+            <div class="invalid-feedback" *ngIf="up.submitted && password.invalid">
+                <div *ngIf="password.errors.required"> Password name is required</div>
+                <div *ngIf="password.errors.minlength"> Password must be at least 6 characters</div>
+            </div>
+
+        </div>
+        <div class="wrap-input100 m-b-16" data-validate="Confirm password">
+            <input class=" form-control input100" type="password" name="confirmPassword" placeholder="Confirm Password"  appConfirmEqualValidator="password"
+
+            [(ngModel)]="model.confirmPassword" 
+            #confirmPassword ="ngModel" 
+            [ngClass]="{'is-invalid':up.submitted && confirmPassword.invalid}"
+
+            required minlength="6" />
+
+            <span class="focus-input100"></span>
+
+             <div class="invalid-feedback" *ngIf="up.submitted && confirmPassword.invalid">
+                <div *ngIf="confirmPassword.errors.required">Confirm password name is required</div>  
+
+                 <div *ngIf="!confirmPassword.errors.required && confirmPassword.errors.notEqual">Password and Confirm password does not Match</div>
+            </div>
+        </div>
+        
+        <div class="container-login100-form-btn">
+            <button class="login100-form-btn">
+                Sign up
+            </button>
+        </div>
+        <div class="flex-col-c p-t-140 p-b-40">
+            <span class="txt1 p-b-9">
+                Already have an account?
+            </span>
+            <div  class="txt3 sign-in" [routerLink]="['/login']">
+                Sign in now
+            </div>
+        </div>
+    </form>
+</div>

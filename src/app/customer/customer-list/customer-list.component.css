@@ -1,0 +1,641 @@
+
+
+	/*customer list table*/
+
+    
+    /*Table*/
+
+    .table.accord-table {
+        width: 100%;
+        margin-bottom: 0px;
+        border-spacing: 0 10px;
+        border-collapse: separate;
+        padding: 0px;
+        border-radius: 3px;
+    }
+
+    .table.accord-table thead tr {
+        background-color: #64a5c9;
+        color: #ffff;
+        font-size: 13px;
+    }
+
+    .table.accord-table thead tr .btn-trans{
+        color: #fff;
+    }
+    .table.accord-table thead th {
+        border-bottom: none;
+    }
+
+    .table.accord-table tbody tr {
+        border-radius: 3px;
+        box-shadow: 0px 2px 9px rgba(100, 108, 167, 0.44);
+        background-color: #fff;
+        color: #4a4a4a;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+
+
+    .table.accord-table tbody tr:nth-child(odd) {
+        background: #ffffff;
+    }
+
+    .table.accord-table td,.table.accord-table th {
+        padding: 25px 10px;
+        vertical-align: top;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .table.book-table thead tr {
+        background-color: #64a5c9;
+        color: #ffff;
+        font-size: 13px;
+    }
+
+
+    .table.book-table tbody tr {
+        border-radius: 3px;
+        box-shadow: 0px 2px 9px rgba(100, 108, 167, 0.44);
+        background-color: #fff;
+        color: #4a4a4a;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+
+   /* .table.book-table td,.table.book-table th{
+        padding: 25px 10px;
+        vertical-align: middle;
+        border-top: none;
+        border-bottom: none;
+    }*/
+
+    .table-list ul li{
+        padding-bottom: 10px;
+    }
+
+    .table-list ul li:last-child {
+        padding-bottom: 0px;
+    }
+
+
+
+    .table.accord-table td:first-child {
+        border-top-left-radius: 4px; 
+        border-bottom-left-radius: 4px;
+    }
+    .table.accord-table td:last-child {
+        border-bottom-right-radius: 4px; 
+        border-top-right-radius: 4px; 
+    }
+
+    .table.accord-table th:first-child {
+        border-top-left-radius: 4px; 
+        border-bottom-left-radius: 4px;
+        width: 100px;
+    }
+    .table.accord-table th:last-child {
+        border-bottom-right-radius: 4px; 
+        border-top-right-radius: 4px; 
+    }
+
+    /* table end */
+
+
+    /*
+    status css*/
+    .sort-list{
+        position: relative;
+        padding: 35px!important;
+    }
+
+    .sort-list .active-status i{
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        text-align: center;
+    }
+    .sort-status{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        font-size: 16PX;
+        color: #ffffff;
+        background: #b87dda;
+        border-radius: 50%;
+        border: 1px solid #b87dda;
+        text-align: center;
+        padding: 12px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+    }
+     .active-status{
+        position: absolute;
+        top: 20px;
+        left: 55px;
+        display: block;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+        color: #ffffff;
+        background: #56c357;
+        border-radius: 50%;
+        border: 0.5px solid #ffffff;
+        text-align: center;
+        padding: 0px;
+    }
+       
+    span.active-status.flight-icon i{
+            font-size: 8px;
+    }
+
+    .yellow-color   {
+        background: #f3b00a!important;
+        border: 1px solid #f3b00a!important;
+    }
+
+    .close-icon{
+        background:red!important;
+    }
+
+    .red-color{
+        background: #e44f4f!important;
+        border: 1px solid #e44f4f!important;
+    }
+    .refresh-icon{
+        background: #565252!important   ;
+    }
+    .green-color{
+        background: #94ce94!important;
+        border: 1px solid #94ce94!important;
+    }
+    .reply-icon{
+          background:#e87943!important ;
+    }
+    .darkgreen-color{
+        background: #62b799!important;
+        border: 1px solid #62b799!important;
+    }
+    .flight-icon{
+        background:#578fda!important; 
+    }
+
+    /* Booking Id */
+
+    .date-status ul,.code,.depart-place,.transport,.client-data{
+        list-style-type: none;
+        margin:0px;
+        padding:0px;
+     }
+
+    .date1{
+        font-size: 14px;
+        color: #a5a1a1cc;
+        font-weight: 600; 
+    }
+
+     .date2,.client-name,.place,.code-no{
+        font-weight: 600;
+        font-size: 14px;
+        color: #424242;
+        word-break: break-word;
+        width: 125px;
+     }
+
+     .depart-place .depart{
+        width: 150px;
+        word-break: break-word;
+        line-height: 20px;
+     }
+
+     .depart-place .place{
+        width: 150px;
+        word-break: break-word;
+     }
+
+
+
+    .table.accord-table .prior-class li.client-no{
+        width: 150px;
+        word-break: break-all;
+    }
+
+    .table.accord-table .table-head{
+        padding-left: 25px;
+    }
+
+     .mail-box{
+        width: 20%;
+     }
+
+     .admin-con{
+        width: 20%;
+     }
+
+      .admin-con .client-name{
+            width: 150px;
+            word-break: break-word;
+      }
+     
+
+     .mail-box p.mail-con {
+        margin: 0px;
+        word-break: break-word;
+        width: 100%;
+        line-height: 20px;
+    }
+    .cus-name{
+        margin: 0px;
+        line-height: 20px;
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+    .transport li{
+        float: left;
+        padding:2px;
+        cursor: pointer;
+    }
+
+    .depart{
+        color:#F24F00;
+        font-weight: 600;
+    }
+
+    .price{
+        font-weight: 600;
+        color: #2bb58b;
+        font-size: 16px;    
+        width: 100px;
+        word-break: break-all;
+        line-height: 20px;
+        margin: 0px;
+
+    }
+
+    .cus-date{
+        margin: 0px;
+        line-height: 25px;
+    }
+
+    .brand-one{
+        width: 125px;
+        word-break: break-word;
+    }
+
+    .transport i{
+        border: 2px solid #17a2b8;
+        padding: 7px;
+        border-radius: 20px;
+        color: #17a2b8;
+    }
+
+    .table-head{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .table-head li{
+        display: inline-block;
+        padding:0 22px;
+        cursor: pointer;
+
+    }
+    .active-list{
+        color:#fff;
+    }
+
+    .booking-id{
+        color: #fff;
+    }
+
+    .chart-bar1{
+        color: #a7a5a5;
+        font-size: 18px;
+    }
+
+    .chart-bar2{
+        color: #4a4a4a;
+        font-size: 18px;
+    }
+
+
+    /*styles css xtra*/
+
+
+
+    /* section */
+
+     .menu-sidebar-content ul li.active {
+        box-shadow: 0 16px 25px 5px rgba(0, 0, 0, 0.1);
+        border-left: 2px solid #f24F00;
+        }
+     
+     .active1{
+        color:#f24F00!important; 
+     }
+     .active2{
+          fill: #f24F00 !important;
+          fill-opacity: 1;
+     }
+
+    .main-section{
+
+        width: calc(100% - 150px);
+        margin-left: 150px;
+        margin-top: 50px;
+     }
+     
+    .main-panel{
+        width: 95%;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+     
+
+    .active-4{
+        border-left: none!important;
+        border-right: none!important;
+    }
+    .active-4:first-child{
+       border-left: 1px solid #9B7CAF!important; 
+    }
+
+    .book-table .cus-button{
+    	justify-content: flex-start;
+    }
+
+    .book-table .cus-button button{
+    	width: 30px;
+    	height: 30px;
+    	margin-right: 5px;
+    }
+
+    .cus-button .edit-btn img ,.cus-button .delete-btn img{
+    	width: 12px;
+    }
+
+     .cus-button .edit-btn{
+     	background:#0a88c1;
+     }
+
+     .cus-button  .delete-btn{
+     	background: red;
+     }
+
+    .cus-button .det-btn{
+    	background:#efa01f;
+    }
+
+     .book-table  .cus-button i{
+    	font-size: 12px;
+    }
+
+/*
+    .list-icon li:after{
+      height: 10px;
+      width: 10px;
+      background-color: red;
+    }
+
+
+    .list-icon i {
+        padding: 0 10px;
+        cursor: pointer;
+    }
+*/
+    .table.book-table .table-list ul,.table.book-table .table-admin ul,.table.book-table .table-icon ul{
+         margin: 0;
+         list-style-type: none;
+         padding: 0;
+       
+    }
+    .table.book-table .list-admin li{
+            padding: 0 5px;
+            display: inline-block;
+    }
+
+
+    .table-admin .list-admin {
+    	display: flex;
+    	align-items: center;
+    }
+    .table-admin .list-admin .pro-name{
+    	width: 130px;
+    	 white-space: nowrap; 
+  		overflow: hidden;
+  		text-overflow: ellipsis;
+    }
+/*    .table.book-table .list-icon li{
+            padding: 0 10px;
+            display: inline-block;
+    }*/
+
+    .table.book-table .admin img {
+        width: 45px;
+    	height: 45px;
+    	border-radius: 5px;
+    }
+/*
+    .table.book-table .list-icon button{
+        background: transparent;
+        border: transparent;
+        color: #939393;
+        font-weight: 600;
+    }
+*/
+    .table-list {
+        font-size: 13px;
+    }
+
+    .list-book1{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .list-book2{
+        color:#939393;
+        font-weight: 500;
+    }
+
+   /* .list-admin li , .list-icon li{
+        display: inline-block;
+    }*/
+
+    .list-admin li{
+        padding: 0 5px;
+    }
+
+
+    .view-btn {
+        background: transparent;
+        padding: 10px 25px;
+        border: 1px solid #d8cccc;
+        color: #5d5959;
+        outline: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .btn-trans{
+        background: transparent;
+        border: transparent;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .prior-class:hover .view-btn{
+           background-color: #64a5c9;
+        color: #fff;
+        border-color: #64a5c9;
+    }
+    .prior-class:hover .list-book1{
+     color:#64a5c9;
+    }
+
+
+
+    .table-head span i{
+        padding: 0 5px;
+    }
+
+    .desc-content{
+        line-height: 25px;
+    }
+
+    /* Table */
+
+
+    .content-area-con {
+        display: table;
+        position: relative;
+        padding: 0px 0px;
+    }
+
+    .full-con {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+
+
+
+    /*Table*/
+
+
+    .table.book-table {
+        width: 100%;
+        margin-bottom: 0px;
+        border-spacing: 0 10px;
+        border-collapse: separate;
+        padding: 0px;
+        border-radius: 3px;
+    }
+
+    .table.book-table .table-head {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .table.book-table thead tr {
+        background-color: #64a5c9;
+        color: #ffff;
+        font-size: 13px;
+    }
+
+    .table.book-table thead tr .btn-trans{
+        color: #fff;
+    }
+    .table.book-table thead th {
+        border-bottom: none;
+    }
+
+    .table.book-table tbody tr {
+        border-radius: 3px;
+        box-shadow: 0px 2px 9px rgba(100, 108, 167, 0.44);
+        background-color: #fff;
+        color: #4a4a4a;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+
+    .table.book-table tbody tr:nth-child(odd) {
+        background: #ffffff;
+    }
+
+    .table.book-table td,.table.book-table th {
+        padding: 10px;
+        vertical-align:middle;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .table.book-table thead tr {
+        background-color: #64a5c9;
+        color: #ffff;
+        font-size: 13px;
+    }
+
+
+    .table.book-table tbody tr {
+        border-radius: 3px;
+        box-shadow: 0px 2px 9px rgba(100, 108, 167, 0.44);
+        background-color: #fff;
+        color: #4a4a4a;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+
+    .table-list ul li{
+        padding-bottom: 10px;
+    }
+
+    .table-list ul li:last-child {
+        padding-bottom: 0px;
+    }
+
+
+
+    .table.book-table td:first-child {
+        border-top-left-radius: 4px; 
+        border-bottom-left-radius: 4px;
+    }
+    .table.book-table td:last-child {
+        border-bottom-right-radius: 4px; 
+        border-top-right-radius: 4px; 
+    }
+
+    .table.book-table th:first-child {
+        border-top-left-radius: 4px; 
+        border-bottom-left-radius: 4px;
+        width: 100px;
+    }
+    .table.book-table th:last-child {
+        border-bottom-right-radius: 4px; 
+        border-top-right-radius: 4px; 
+    }
+
+    /* table end */
+
+
+		
+		   

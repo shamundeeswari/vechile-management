@@ -1,0 +1,316 @@
+ .wrap-login100{
+          width: 450px;
+          background: #fff;
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+          -moz-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+          -webkit-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+          -o-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+          -ms-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+          height: auto;
+          border: 1px solid #dedede;           
+          }
+        .login100-form{
+          width:100%;
+          position:relative;
+          }
+        .login100-form-title{
+          font-family:JosefinSans-Bold;
+          font-size:30px;
+          color:#fff;
+          line-height:1.2;
+          text-align:center;
+          display:block;
+          width:100%;
+          top:0;
+          left:0;
+          background-color:#5d4ef3;
+          padding-top:50px;
+          padding-bottom:39px;
+            }
+        .wrap-input100{
+          width:100%;
+          background-color:#fff;
+          border-radius:27px;
+          position:relative;
+          z-index:1;
+          }
+        .input100{
+          font-family:Ubuntu-Bold;
+          font-size:15px;
+          color:#1b3815;
+          line-height:1.2;
+          position:relative;
+          display:block;
+          width:100%;
+          height:55px;
+          background:#ebebeb;
+          border-radius:27px;
+          padding:0 35px;
+          }
+        .focus-input100{
+          display:block;
+          position:absolute;
+          z-index:-1;
+          width:100%;
+          height:auto;
+          top:0;
+          left:50%;
+          -webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);
+          -ms-transform:translateX(-50%);-o-transform:translateX(-50%);
+          transform:translateX(-50%);
+          border-radius:31px;
+          background-color:#ebebeb;
+          pointer-events:none;
+          -webkit-transition:all .4s;-o-transition:all .4s;
+          -moz-transition:all .4s;transition:all .4s
+        }
+        .p-r-55{
+            padding-right: 55px;
+          }
+        .p-l-55{
+           padding-left: 55px;
+         }
+        .p-t-178{
+          padding-top: 178px;
+        }
+        .m-b-16{
+           margin-bottom: 30px;
+         }
+        .p-t-20{
+          padding-top:20px;
+        }
+        .txt1 {
+            font-family: Ubuntu-Regular;
+            font-size: 15px;
+            color: #999;
+            line-height: 1.4;
+        }
+        .p-b-9 {
+            padding-bottom: 9px;
+        }
+        .m-t-15{
+          margin-top:15px;
+        }
+   
+      .flex-col-c {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          -o-flex-direction: column;
+          flex-direction: column;
+          -ms-align-items: center;
+          align-items: center;
+      }
+      .p-b-40 {
+          padding-bottom: 40px;
+      }
+      .p-t-140
+      {
+      padding-top: 40px;
+      }
+
+      .login100-form-btn {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 20px;
+          width: 100%;
+          height: 50px;
+          background-color: #5d4ef3;
+          border:1px solid;
+          border-radius: 25px;
+          font-family: Ubuntu-Bold;
+          font-size: 15px;
+          color: #fff;
+          line-height: 1.2;
+          text-transform: uppercase;
+          -webkit-transition: all .4s;
+          -o-transition: all .4s;
+          -moz-transition: all .4s;
+          transition: all .4s;
+        
+      }
+      .login100-form-btn:focus{
+        outline: none;
+      }
+      .invalid-feedback{
+        margin-top:5px;
+        position: absolute;
+      }
+
+      .forget .login100-form-btn {
+          margin-bottom:30px;
+      }
+      .text-right {
+          text-align: right!important;
+      }
+      .p-t-13 {
+          padding-top: 13px;
+      }
+      .p-b-23 {
+          padding-bottom: 23px;
+      }
+      .heading-left{
+        color: white;
+        width: 65%;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 50px;  
+        letter-spacing: 4px;
+      }
+     .company-sec:before{
+        content: "";
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background: 0 0;
+        border: 5px solid #fafafa;
+        position: absolute;
+        top: -80px;
+        left:-120px;
+        -webkit-animation: 10s linear infinite alternate nudge-lft;
+        animation: 10s linear infinite alternate nudge-lft;
+     }
+
+    .small-cir{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      height: 100vh;
+    }
+    
+
+     .small-cir:before{
+      content: "";
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: 0 0;
+      border: 3px solid #fafafa;
+      position: absolute;
+      top: 50px;
+      left: 70px;
+      -webkit-animation: 6s linear infinite alternate nudges;
+      animation: 6s linear infinite alternate nudges;
+     }
+
+     .logo-title{
+      font-size: 70px;
+      color: #fff;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+
+     }
+     
+     .logo-title span{
+      padding-left:10px;
+      letter-spacing: 10px;
+     }
+     .logo-title p{
+      font-size: 18px;
+     }
+
+
+     .signup-form{
+      display: none;
+     }
+
+     .sign-up,.sign-in{
+      cursor: pointer;
+     }
+    
+    .show{
+      display: block;
+    }
+    .hide{
+      display:none;
+    }
+
+
+     .txt1{
+          font-family:Ubuntu-Regular;
+          font-size:15px;
+          color:#999;
+          line-height:1.4;
+        }
+      .txt2{
+          font-family:Ubuntu-Regular;
+          font-size:15px;
+          color:#57b846!important;
+          line-height:1.4;
+          cursor: pointer;
+        }
+      .txt3{
+          font-family:Ubuntu-Bold;
+          font-size:15px!important;
+          color:#57b846;
+          line-height:1.4;
+          text-transform:uppercase;
+        }
+        .txt2:hover,.txt3:hover{ 
+          color:#000;          
+        }
+
+        .txt2:focus,.txt3:focus{
+          outline: none;
+        }
+     
+     /*nudge keyframes*/
+
+      @keyframes nudge-lft{
+         0%, 100% {
+           transform: translate(0, 0);
+         }
+         
+         50% {
+           transform: translate(0px,20px);
+         }
+         
+         80% {
+           transform: translate(30px, 0px);
+         }
+        }
+
+
+        @keyframes nudge-rgt{
+         0%, 100% {
+           transform: translate(0, 0);
+         }
+         
+         50% {
+           transform: translate(20px,0px);
+         }
+         
+         80% {
+           transform: translate(0px, 30px);
+         }
+        }
+
+      @keyframes nudges{
+         0%, 100% {
+           transform: translate(30px,0px);
+         }
+         
+         50% {
+           transform: translate(0px,30px);
+         }
+         
+         80% {
+           transform: translate(30px,0px);
+         }
+        }

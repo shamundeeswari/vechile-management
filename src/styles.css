@@ -1,1 +1,129 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+  body{
+        margin:0;
+        padding:0;
+        overflow-x: hidden;
+    }
+
+  body,html{
+    height:100%;
+    font-family:Ubuntu-Regular,sans-serif
+    }
+    
+  a{
+    font-family:Ubuntu-Regular;
+    font-size:14px;
+    line-height:1.7;
+    color:#666;
+    margin:0;
+    transition:all .4s;-webkit-transition:all .4s;-o-transition:all .4s;-moz-transition:all .4s
+  }
+  a:focus{
+    outline:none!important
+    }
+  a:hover{
+      text-decoration:none;
+      color:#1b3815;
+    }
+  h1,h2,h3,h4,h5,h6{
+      margin:0;
+    }
+
+  ul,li{
+     margin:0;
+     list-style-type:none;
+    }
+  input{
+     outline:none;border:none;
+    }
+
+    
+    .main {
+        max-width: calc(100% - 231px);
+        margin-left: 230px;
+        padding: 15px;
+        margin-top: 60px;
+        height: calc(100% - 60px);
+        background: #f4f0f0;
+    }
+
+    .customer-name{
+      font-size: 24px;
+      color: #4a4a4a;
+    }
+
+    .cus-home{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .cus-home .home{      
+      color: green;     
+    }
+    
+    .cus-home .cus-title{
+      color: #efa01f;
+    }
+
+    .cus-button{
+      display: flex;
+      justify-content: flex-end;
+      margin: 15px 0px;
+    } 
+
+    .cus-button button{
+        border-radius: 5px;
+        width: 40px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        margin-right: 15px;
+    }
+    .cus-button button:focus{
+      outline: none;
+      box-shadow: none;
+    }
+
+    .cus-button button.add-btn{
+      background: #069d06;
+    }
+    .cus-button button.add-btn:hover{
+      color: #fff;
+    }
+    .cus-button button.dash{
+      background:#efa01f;
+    }
+
+    .cus-button button.dash img{
+      width: 15px;      
+    }
+    .cus-button button.dash svg{
+      color:#fff;
+    }
+
+
+  .customer-list{
+      background: #fff;
+      border-top: 3px solid #4CAF50;
+      border-radius: 3px;
+      padding: 20px;
+  }
+
+  .customer-list .customer-name{
+    font-size: 16px;
+    color: #4a4a4a;   
+  }
+
+  .r-arrow{
+    padding: 0px 10px;
+  }
+
+  button:focus{
+  outline: none;
+}
