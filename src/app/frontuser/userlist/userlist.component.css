@@ -384,17 +384,23 @@
     	margin-right: 5px;
     }
 
+    .book-table .cus-button button a{
+        display: flex;
+        align-items: center;
+    }
+
     .cus-button .edit-btn img ,.cus-button .delete-btn img{
     	width: 12px;
+
     }
 
      .cus-button .edit-btn{
      	background:#0a88c1;
      }
 
-     .cus-button  .delete-btn{
-     	background: red;
-     }
+   /*  .cus-button  .delete-btn{
+     	background:#cc2f25;
+     }*/
 
     .cus-button .det-btn{
     	background:#efa01f;
@@ -402,6 +408,7 @@
 
      .book-table  .cus-button i{
     	font-size: 12px;
+        color: #fff;
     }
 
 /*
@@ -626,8 +633,7 @@
 
     .table.book-table th:first-child {
         border-top-left-radius: 4px; 
-        border-bottom-left-radius: 4px;
-        width: 100px;
+        border-bottom-left-radius: 4px;        
     }
     .table.book-table th:last-child {
         border-bottom-right-radius: 4px; 

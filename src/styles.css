@@ -93,11 +93,18 @@
     .cus-button button.add-btn{
       background: #069d06;
     }
-    .cus-button button.add-btn:hover{
+
+    .cus-button .delete-btn {
+      background: #a7403a;
+       margin-right: 0px;
+    }
+    .cus-button button.add-btn:hover,
+    .cus-button .delete-btn {
       color: #fff;
     }
     .cus-button button.dash{
       background:#efa01f;
+     
     }
 
     .cus-button button.dash img{

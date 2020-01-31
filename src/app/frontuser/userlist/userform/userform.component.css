@@ -1,4 +1,4 @@
-@import '../../login/sign-up/sign-up.component.css';
+@import '../../../login/sign-up/sign-up.component.css';
 
 	.details-form{
 		padding-top:15px;	
@@ -136,4 +136,24 @@
     align-items: center;
     vertical-align: center;
     background: #607D8B;
+}
+
+
+.form-modal .modal-dialog{
+  margin: 60px auto;
+}
+
+.cus-button.form-save button{
+    width: auto;
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cus-button.form-save i {
+    color: #4a4a4a;
+}
+
+.cus-button.form-save span {
+    padding-left: 10px;
 }

@@ -11,10 +11,10 @@ const routes: Routes = [
 	{path: "", component: PreloginComponent, children: 
 	[
 		{
-			path: "", redirectTo: "login", pathMatch: "full"
+			path: "", redirectTo: "pre-login", pathMatch: "full"
 		},
 		{
-			path: "login", component: SignInComponent
+			path: "pre-login", component: SignInComponent
 		},
 		{
 			path: "signup", component: SignUpComponent

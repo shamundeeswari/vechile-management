@@ -1,0 +1,148 @@
+ 
+		
+		<app-header></app-header>
+		
+		<div id="st-container" class="st-container">	
+		<!--sidebar  -->
+		<app-sidebar></app-sidebar>
+
+		<!-- main  -->
+
+		<div class="main clearfix">
+				<div class="customer-name">
+				<i class="fa fa-users"></i>
+				 Customer
+			</div>
+
+			<div class="cus-home">
+				<div class="home">
+					<i class="fa fa-home"></i>
+					Home	
+					<span class="r-arrow">
+						<i class="fa fa-caret-right"></i>
+					</span>				
+				</div>
+				<div class="cus-title">
+					Customer List
+				</div>
+			</div>
+
+			<div class="cus-button">
+				<button class="btn add-btn" data-toggle="modal" data-target="#myModal"> 
+					<i class="fa fa-plus"></i>
+				</button>
+				<button class="btn dash">
+					<img src="assets/images/dashboard.svg">
+				</button>
+			</div>			
+		<section class="customer-list">		
+			<div class="customer-name">
+				<i class="fa fa-list"></i>
+				 Customer list
+			</div>  
+
+		    <table class="table book-table" 
+		        	>
+		          <thead class="table-head">
+		            <tr>
+		              <th>Created on </th>
+		              <th> Customer Name </th>  
+		              <th> Customer mail  </th>
+		              <th> Home Tel  </th>                        
+		              <th> Work Tel  </th>                        
+		              <th> Mobile Tel  </th>  
+		              <th> Action </th>                        
+		            </tr>
+		          </thead>        
+		                        
+		          <tbody class="table-body">
+		            <!-- 1st tr -->
+		              <tr class="prior-class" *ngFor="let customer of customers ,index as customerId">	
+		                 <td class="date-sec">
+		                    <!-- {{ customer.date }} -->
+		                  </td>	           
+		                  <td class="profile-sec">
+		                    <div class="table-admin">
+		                       <ul class="list-admin">		               
+		                          <li>
+		                         <span>
+		                            <a class="admin" href="#">
+		                             <img [src]=" customer.imgPath" alt="Admin" >
+		                            </a>
+		                          </span>
+		                        </li>
+		                    
+		                        <li  class="pro-name">
+		                          {{ customer.name }}
+		                        </li>
+		                      </ul>
+		                    </div>
+		                  </td>
+		                  <td class="desc-sec">
+		                    <div class="table-list">
+		                    	 {{ customer.email }}		                      	
+		                    </div>
+		                  </td>	
+		                  <td>
+		                  	<div class="mobile-no">
+		                  		{{ customer.homNum }}
+		                  	</div>
+		                  </td>	
+		                  <td>
+		                  	<div class="mobile-no">
+		                  		{{ customer.workNum }}
+		                  	</div>
+		                  </td>	  
+		                  <td>
+		                  	<div class="mobile-no">
+		                  		{{ customer.mobNum }}
+		                  	</div>
+		                  </td>              
+		                  
+		                  <td class="action-sec" >
+		                    <div class="table-icon">
+		               			<div class="cus-button">
+		               				<button class="btn det-btn"> 
+		               					
+		               					<a [title]="customer.name + ' Car details'" >            	
+
+		               						<i class="fa fa-car"></i>
+		               					</a>
+
+		               				</button>
+		               				<button class="btn add-btn">
+
+		               					<a [title]="customer.name + ' details'"
+
+		               					   [routerLink]="['/Customers', customerId]" >	
+
+		               					   <i class="fa fa-eye"></i> 
+		               					</a>
+
+		               				</button>
+		               				<button class="btn edit-btn">
+
+		               					<a title = "edit">
+		               						<img src="assets/images/pen.svg">
+		               					</a>
+
+		               				</button>
+									<button class="btn delete-btn"> 
+
+										<a title = "delete" >
+											<img src="assets/images/delete.svg">
+										</a>
+
+									</button>									
+								</div>
+		                    </div>
+		                  </td>
+		              </tr>
+		          </tbody>
+		        </table>
+			</section>
+			<app-userform (userdetailAdded)="OnuserdetailAdded($event)"></app-userform>
+		</div>
+	</div>
+
+			
