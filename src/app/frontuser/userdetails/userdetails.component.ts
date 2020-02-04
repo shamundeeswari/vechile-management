@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+// import { Customer } from '../user.model';
+
+import { customerDetail} from '../customerdetails'
+
 
 @Component({
   selector: 'app-userdetails',
@@ -7,9 +12,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserdetailsComponent implements OnInit {
 
-  constructor() { }
+  customer;
+  
+
+  constructor( private route :ActivatedRoute,) { }
 
   ngOnInit() {
+
+  	this.route.paramMap.subscribe(params => {
+  		this.customer = customerDetail [+ params.get('customerId') ];
+  	} )
+
   }
 
 }

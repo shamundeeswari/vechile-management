@@ -7,16 +7,16 @@ import { Customer } from '../../user.model';
   templateUrl: './userform.component.html',
   styleUrls: ['./userform.component.css']
 })
+
 export class UserformComponent implements OnInit {
 
- @ViewChild('userName') nameInputRef:ElementRef;
- @ViewChild('userMail') mailInputRef:ElementRef;
- // @ViewChild('userDetail') detailInputRef:ElementRef;
- @ViewChild('userHome') homeInputRef:ElementRef;
- @ViewChild('userWork') workInputRef:ElementRef;
- @ViewChild('userMob') mobInputRef:ElementRef;
+  @ViewChild('userName') nameInputRef:ElementRef;
+  @ViewChild('userMail') mailInputRef:ElementRef;
+  @ViewChild('userHome') homeInputRef:ElementRef;
+  @ViewChild('userWork') workInputRef:ElementRef;
+  @ViewChild('userMob') mobInputRef:ElementRef;
 
- @Output() userdetailAdded = new EventEmitter<Customer>();
+  @Output() userdetailAdded = new EventEmitter<Customer>();
 
 
   constructor() { }
@@ -27,17 +27,12 @@ export class UserformComponent implements OnInit {
   onAddItem(){
   	const srName = this.nameInputRef.nativeElement.value;
   	const srMail = this.mailInputRef.nativeElement.value;
-  	// const srDtl = this.detailInputRef.nativeElement.value;
   	const srHome = this.homeInputRef.nativeElement.value;
   	const srWork = this.workInputRef.nativeElement.value;
   	const srMob = this.mobInputRef.nativeElement.value;
 
-
-
-  	const newuserdetail = new Customer(srName,srMail,srHome,srWork,srMob);
+  	const newuserdetail = new Customer('',srName,srMail,srHome,srWork,srMob);
   	this.userdetailAdded.emit(newuserdetail);
-
-  	//console.log(newuserdetail);
 
   }
 
